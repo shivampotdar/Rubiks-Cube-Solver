@@ -1,6 +1,5 @@
 import cv2
 import os
-from meandistance import midis,findcolor
 import random
 import pandas as pd
 import numpy as np

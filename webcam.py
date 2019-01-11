@@ -1,8 +1,13 @@
 import cv2
-import os
+#import os
+import pandas as pd
+import numpy as np
+import sklearn
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.externals import joblib
+import os.path
 from average import average_color
 from knn import colorrec
-
 
 
 directory = 'img'
@@ -12,16 +17,17 @@ cv2.namedWindow("preview")
 vc = cv2.VideoCapture(0)
 
 if vc.isOpened(): # try to get the first frame
-    rval, frame = vc.read()
+    rval, frame = vc.read()					
 else:
     rval = False
 
 img_counter = 0
-xpos = 125
-ypos = 185
-size = 50
+xpos = 190
+ypos = 85
+size = 100
 colpredict = colorrec()
 while rval and img_counter !=6:
+    frame=cv2.flip(frame,1)
     cv2.imshow("preview", frame)
     rval, frame = vc.read()
     key = cv2.waitKey(20)
