@@ -21,7 +21,7 @@ print(cube_main)
 solver = CFOPSolver(cube_main)
 
 steps = solver.solve()
-steps = steps.mirror()
+#steps = steps.mirror()
 
 step_list = list(steps)
 print(steps)
