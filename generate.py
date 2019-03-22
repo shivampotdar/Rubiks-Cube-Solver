@@ -89,7 +89,7 @@ class av_color:
         return avg
 
 cv2.namedWindow("preview")
-vc = cv2.VideoCapture(0)
+vc = cv2.VideoCapture(1)
 if vc.isOpened(): # try to get the first frame
     rval, frame = vc.read()
 else:

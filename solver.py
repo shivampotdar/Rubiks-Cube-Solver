@@ -32,8 +32,4 @@ cube_solve = pc.Cube(cubie)
 for i in range(len(step_list)):
     cube_solve(steps[i])
     print(cube_solve)
-    sleep(0.1)
-
-
-
-
+    sleep(0.3)

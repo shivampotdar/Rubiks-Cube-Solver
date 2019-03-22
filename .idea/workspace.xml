@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3c3347-1360-484f-b1cd-4f43572f27c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/webcam_backup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Param.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/average.py" beforeDir="false" afterPath="$PROJECT_DIR$/average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/knn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/webcam.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webcam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="140">
+              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webcam_backup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -28,17 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/average.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
+            <state relative-caret-position="387">
+              <caret line="89" column="44" lean-forward="true" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -46,11 +55,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="507">
+              <caret line="35" lean-forward="true" selection-start-line="6" selection-end-line="35" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -67,6 +100,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>size</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,10 +112,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/solver.py" />
+        <option value="$PROJECT_DIR$/average.py" />
+        <option value="$PROJECT_DIR$/knn.py" />
+        <option value="$PROJECT_DIR$/generate.py" />
+        <option value="$PROJECT_DIR$/webcam_backup.py" />
+        <option value="$PROJECT_DIR$/webcam.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="y" value="27" />
     <option name="width" value="960" />
@@ -89,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,16 +140,10 @@
               <item name="Rubiks-Cube-Solver" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rubiks-Cube-Solver" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Rubiks-Cube-Solver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rubiks-Cube-Solver" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,18 +202,23 @@
       <workItem from="1551902073322" duration="2568000" />
       <workItem from="1552122234048" duration="3154000" />
       <workItem from="1552236220318" duration="169000" />
-      <workItem from="1552477113641" duration="2787000" />
+      <workItem from="1552477113641" duration="3381000" />
+      <workItem from="1552481746925" duration="1545000" />
+      <workItem from="1552644757563" duration="12000" />
+      <workItem from="1553196601126" duration="1433000" />
+      <workItem from="1553200098822" duration="1202000" />
+      <workItem from="1553266481438" duration="778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8678000" />
+    <option name="totallyTimeSpent" value="14242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26148796" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14034152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -189,13 +232,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32894737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" x="0" y="0" width="187" height="853" id="Documentation" order="4" side_tool="true" visible="true" weight="0.15864332" />
+      <window_info active="true" anchor="right" x="0" y="0" width="187" height="853" id="Documentation" order="4" side_tool="true" visible="true" weight="0.0773746" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -208,37 +251,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
+        <state relative-caret-position="1740">
+          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webcam.py">
+    <entry file="file://$PROJECT_DIR$/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="220">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/average.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="387">
+          <caret line="89" column="44" lean-forward="true" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webcam_backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="507">
+          <caret line="35" lean-forward="true" selection-start-line="6" selection-end-line="35" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webcam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

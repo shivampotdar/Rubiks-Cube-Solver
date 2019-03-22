@@ -1,14 +1,10 @@
 import cv2
-#import os
-import pandas as pd
-import numpy as np
-import sklearn
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.externals import joblib
-import os.path
+import os
 from average import average_color
 from knn import colorrec
-
+import pycuber as pc
+from pycuber.solver import CFOPSolver
+from time import sleep
 
 directory = 'img'
 if not os.path.isdir(directory):
@@ -17,17 +13,17 @@ cv2.namedWindow("preview")
 vc = cv2.VideoCapture(0)
 
 if vc.isOpened(): # try to get the first frame
-    rval, frame = vc.read()					
+    rval, frame = vc.read()
 else:
     rval = False
 
 img_counter = 0
-xpos = 190
-ypos = 85
-size = 100
+xpos = 125
+ypos = 185
+size = 50
+faces_solve = []
 colpredict = colorrec()
 while rval and img_counter !=6:
-    frame=cv2.flip(frame,1)
     cv2.imshow("preview", frame)
     rval, frame = vc.read()
     key = cv2.waitKey(20)
@@ -35,8 +31,7 @@ while rval and img_counter !=6:
         imgname = "img"+str(img_counter)+".png"
         frame = frame[ypos:ypos + 3*size,xpos:xpos+3*size]
         cv2.imwrite(os.path.join(directory,imgname), frame)
-        img_counter = img_counter + 1
-        print("Face {} taken".format(img_counter))
+        print("Face {} taken".format(img_counter+1))
         cubeFace = average_color(frame)
         col1 = cubeFace.face1()
         col2 = cubeFace.face2()
@@ -61,6 +56,10 @@ while rval and img_counter !=6:
         k = input('Is this face correct?(Y/N)\n')
         if str(k) == str('N'):
             img_counter = img_counter - 1
+        else:
+            faces_solve.append(faces)
+            img_counter = img_counter + 1
+
     else:
         cv2.rectangle(img=frame, pt1=(xpos, ypos),pt2=(xpos+size,ypos+size), color=(255, 0, 0), thickness=2, lineType=8, shift=0)
         cv2.rectangle(img=frame, pt1=(xpos + size, ypos),pt2=(xpos + 2*size,ypos+size), color=(255, 0, 0), thickness=2, lineType=8, shift=0)
@@ -74,3 +73,30 @@ while rval and img_counter !=6:
 
 vc.release()
 cv2.destroyWindow("preview")
+
+array_default = '000000000111111111222222222333333333444444444555555555'
+
+array = faces_solve
+
+cube_default = pc.Cube()
+
+cubie = pc.array_to_cubies(array)
+
+cube_main = pc.Cube(cubie)
+
+print(cube_main)
+
+solver = CFOPSolver(cube_main)
+
+steps = solver.solve()
+
+step_list = list(steps)
+print(steps)
+print(len(steps))
+
+cube_solve = pc.Cube(cubie)
+
+for i in range(len(step_list)):
+    cube_solve(steps[i])
+    print(cube_solve)
+    sleep(0.3)
