@@ -99,7 +99,7 @@ img_counter = 0
 xpos = 125
 ypos = 185
 size = 50
-colors = ['Yellow','Red','Blue','White','Green','Orange']
+colors = ['y','r','b','w','g','o']
 ask = True
 while rval and img_counter !=6:
     cv2.imshow("preview", frame)

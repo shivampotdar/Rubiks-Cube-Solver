@@ -53,11 +53,14 @@ while rval and img_counter !=6:
         faces.append(str(colpredict.color(col8)))
         faces.append(str(colpredict.color(col9)))
         cubeFace.makeface(faces,size,img_counter)
+        print(faces)
         k = input('Is this face correct?(Y/N)\n')
         if str(k) == str('N'):
             img_counter = img_counter - 1
         else:
-            faces_solve.append(faces)
+            for i in range(9):
+                faces_solve.append(faces[i][2])
+            print(faces_solve)
             img_counter = img_counter + 1
 
     else:
@@ -76,6 +79,7 @@ cv2.destroyWindow("preview")
 
 array_default = '000000000111111111222222222333333333444444444555555555'
 
+faces_solve = ''.join(faces_solve)
 array = faces_solve
 
 cube_default = pc.Cube()
